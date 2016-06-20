@@ -1,5 +1,14 @@
 #pragma once
 
+#include <io.h>
+#include <string.h>
+#include <direct.h>
+#include <vector>
+
+#pragma warning(disable : 4996)
+
+using namespace std;
+
 #define CHUNK 16384
 #define LEVEL 6
 
@@ -34,3 +43,8 @@ typedef struct {
 	u32 Type2;
 	char name[256];
 } AssetPreloadData;
+
+typedef struct {
+	s32 info;
+	string name;
+} ClassData;
